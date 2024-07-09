@@ -23,7 +23,7 @@ jobs:
       run: npm ci
 
     - name: Run Cypress tests
-      run: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
+      run: npx cypress run
 
     - name: Upload Cypress screenshots
       if: failure()
