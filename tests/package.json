@@ -1,0 +1,18 @@
+{
+  "name": "credifit-tests",
+  "version": "1.0.0",
+  "description": "Testes de software para o site Credifit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:api": "cypress run --spec cypress/integration/CT002_Validar_Sem_Sucesso_400.cy.js",
+    "test:validar-menus": "cypress run --spec cypress/integration/CT001_Validadar_Menus.cy.js",
+    "test:geral": "cypress run --spec cypress/integration/teste_Geral.cy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.0.0"
+  }
+}
+
