@@ -19,6 +19,12 @@ jobs:
       with:
         node-version: 14.x
 
+    - name: Navigate to tests directory
+      run: cd tests
+
+    - name: Clean npm cache
+      run: npm cache clean --force
+
     - name: Install dependencies
       run: npm ci
 
